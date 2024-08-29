@@ -1,0 +1,5 @@
+﻿"column_name","data_type","character_maximum_length"
+"id","bigint",""
+"first_name","character varying",""
+"last_name","character varying",""
+"email","text",""
