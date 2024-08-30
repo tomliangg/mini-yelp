@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Reviews</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Restaurant Reviews</h1>
+    <ul id="review-list">
+      {% for review in reviews %}
+      <li>
+        {{ review["restaurant_name"] }} - Score: {{ review["scores"] }} -
+        Reviewed by: {{ review["reviewer_name"] }}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
