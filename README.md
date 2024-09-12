@@ -20,6 +20,10 @@ pip install -r requirements.txt
 ```sh
 # by default, the app runs on port 5000
 flask run
+
+# if the app runs on the server and it needs to be accessible externally
+flask run --host=0.0.0.0
+# then visit http:<ip_address_of_server>:5000
 ```
 
 ## Prod mode
